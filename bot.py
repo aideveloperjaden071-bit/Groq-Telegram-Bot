@@ -14,7 +14,7 @@ logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
 TELEGRAM_BOT_TOKEN = os.environ.get("TELEGRAM_TOKEN")
-GROQ_API_KEY = os.environ.get("GROQ_API_KEY")
+GROQ_AUTHENTICATION_KEY = os.environ.get("GROQ_API_KEY")
 WEBHOOK_URL = os.environ.get("WEBHOOK_URL")
 
 groq_client = groq.Groq(api_key=GROQ_API_KEY)
